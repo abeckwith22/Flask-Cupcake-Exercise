@@ -21,3 +21,13 @@ class Cupcake(db.Model):
     rating = db.Column(Float, nullable=False)
     image = db.Column(String, nullable=False, default='https://tinyurl.com/demo-cupcake')
 
+    def serialize(self):
+        """Returns a JSON readable object"""
+        obj = {
+            'id':self.id,
+            'flavor':self.flavor,
+            'size':self.rating,
+            'image':self.image
+        }
+        return obj
+
