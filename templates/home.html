@@ -1,5 +1,28 @@
 {% extends "base.html" %}
 {% block title %}Homepage{% endblock %}
 {% block content %}
-<h1>HOMEPAGE</h1>
+<h1>This is the homepage</h1>
+<h3>Flavors</h3>
+<div class="flavors">
+    <ul class="flavor-ul">
+    </ul>
+</div>
+
+<h3>Add your own flavor!</h3>
+<form>
+    <p><label for="flavor">Flavor:</label><input id="flavor" type="text"></p>
+    <!-- <p><label for="small">Small</label><input id="radio1" name="size" type="radio" value="small"></p>
+    <p><label for="medium">Medium</label><input id="radio2" name="size" type="radio" value="medium"></p>
+    <p><label for="large">Large</label><input id="radio3" name="size" type="radio" value="large"></p> -->
+    <p><label for="size-select">Choose a size:</label></p>
+    <select id="size" name="size">
+        <option value="">--Please choose and option--</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <p><label for="rating">Rating:</label><input id="rating" type="number"></p>
+    <p><label for="Image">Image:</label><input id="image" type="text"></p>
+    <p><button id="submit-button">Submit</button>
+</form>
 {% endblock %}
