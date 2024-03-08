@@ -19,29 +19,29 @@
 
 #### Part 2: Listing, Getting & Creating Cupcakes
 
-- [ ] Make routes for the following
+- [x] Make routes for the following
   - [x] **GET** `/api/cupcakes`: Get data about all cupcakes. Respond with JSON like `{cupcakes: [(id, flavor, size, rating, image), ...]}`. The values should come from each cupcake instance.
   - [x] **GET** `/api/cupcakes/[cupcake-id]`: Get data about a single cupcake. Respond with JSON like: `{cupcake: (id, flavor, size, rating, image)}`. This should raise a 404 if the cupcake cannot be found.
   - [x] **POST** `/api/cupcakes`: Create a cupcake with flavor, size, rating, and image data from the body of the request. Respond with JSON like: `{cupcake: {id, flavor, size, rating, image}}`.
-  - [ ] Test that these routes work in Insomnia.
+  - [x] Test that these routes work in Insomnia.
 
 #### Part 3: Update & Delete Cupcakes
 
-- [ ] Make routes for the following:
-- [ ] **PATCH** `/api/cupcakes/[cupcake-id]`: Update a cupcake with the id passed in the URL and flavor, size, rating, and image data from the body of the request. you can always assume that the entire cupcake object will be passed to the backend. This should riase a 404 if the cupcake connot be this: `{cupcake: {id, flavor, size, rating, image}}`.
-- [ ] **DELETE** `/api/cupcakes/[cupcake-id]`: This should raise a 404 if the cupcake cannot be found. Delete cupcake with the id passed in the URL. Respond with JSON like `{message: "deleted"}`.
-- [ ] Test these routes in Insomnia.
+- [x] Make routes for the following:
+- [x] **PATCH** `/api/cupcakes/[cupcake-id]`: Update a cupcake with the id passed in the URL and flavor, size, rating, and image data from the body of the request. you can always assume that the entire cupcake object will be passed to the backend. This should riase a 404 if the cupcake connot be this: `{cupcake: {id, flavor, size, rating, image}}`.
+- [x] **DELETE** `/api/cupcakes/[cupcake-id]`: This should raise a 404 if the cupcake cannot be found. Delete cupcake with the id passed in the URL. Respond with JSON like `{message: "deleted"}`.
+- [x] Test these routes in Insomnia.
 
 #### Part 4: Write More Tests :(
 
-- [ ] Add tests for the PATCH and DELETE routes.
+- [x] Add tests for the PATCH and DELETE routes.
 
 #### Part 5: Start of Front-end
 
-- [ ] Make this route:
-  - [ ] **GET** `/`: This should return an HTML page *(via **render_template**)*. This page should be entirely static (the route should just render the template, without providing any information on cupcakes in the database). It should simply show having an empty list where cupcakes should appear and a form where new cupcakes can be added.
-- [ ] Write JavaScript *(using axios and jQuery)* that:
-  - [ ] Queries the API to get the cupcakes and adds to the page
-  - [ ] Handles form submission to both let the API know about the new cupcake and updates the list on the page to show it.
+- [x] Make this route:
+  - [x] **GET** `/`: This should return an HTML page *(via **render_template**)*. This page should be entirely static (the route should just render the template, without providing any information on cupcakes in the database). It should simply show having an empty list where cupcakes should appear and a form where new cupcakes can be added.
+- [x] Write JavaScript *(using axios and jQuery)* that:
+  - [x] Queries the API to get the cupcakes and adds to the page
+  - [x] Handles form submission to both let the API know about the new cupcake and updates the list on the page to show it.
 
 *Note: You do not need to use WTForms to make this form; this is a possibility in the further study.)*
